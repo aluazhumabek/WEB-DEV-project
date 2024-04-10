@@ -1,5 +1,3 @@
-# WEB-DEV-project
-
 # MyMovieList
 
 MyMovieList is a simple and engaging web app for movie lovers. It's built to help you track, plan, and discover movies in a fun and easy way. Whether you're keeping tabs on movies you've seen, setting up your next movie night, or looking for new favorites, MyMovieList has got you covered.
