@@ -6,6 +6,11 @@ from api.views import (
     genre_list, genre_detail,
 )
 
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
 urlpatterns = [
     path('movies/', movie_list),
     path('movies/<int:pk>/', movie_detail),
@@ -18,4 +23,7 @@ urlpatterns = [
 
     path('reviews/', ReviewListCreateAPIView.as_view()),
     path('reviews/<int:pk>/', ReviewDetailAPIView.as_view()),
+
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
